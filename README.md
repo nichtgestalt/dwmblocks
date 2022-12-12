@@ -1,0 +1,2 @@
+# dwmblocks
+DWM Status bar
