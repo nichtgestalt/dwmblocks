@@ -1,7 +1,8 @@
 #!/bin/sh
 
-vol="$(pactl list sinks | grep '^[[:space:]]Volume:' | head -n 1 | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,')"
+#vol="$(pactl list sinks | grep '^[[:space:]]Volume:' | head -n 1 | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,')"
 
+vol="$(pamixer --get-volume)"
 
 #case 1 in
 #	$((vol >= 70)) ) icon="墳 " ;;
